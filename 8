@@ -1,0 +1,26 @@
+import java.util.Scanner;
+
+/**
+*
+* @author Eddie Eliazar Ganchozo Vargas
+*/
+public class Ejer8ArreglosMatirz {
+
+public static void main(String[] args) { Scanner teclado = new Scanner(System.in); int filas = 4;
+int columnas = 4;
+int[][] matriz = new int[filas][columnas]; int sumaDiagonal = 0;
+
+for (int i = 0; i < filas; i++) {
+for (int j = 0; j < columnas; j++) {
+System.out.print("Ingrese el valor para la fila " + i + ", columna " + j + ": "); matriz[i][j] = Integer.parseInt(teclado.nextLine());
+}
+}
+
+System.out.println("\n--- Diagonal principal ---"); for (int i = 0; i < filas; i++) {
+System.out.println(matriz[i][i]); sumaDiagonal += matriz[i][i];
+}
+
+System.out.println("Suma de la diagonal principal: " + sumaDiagonal);
+}
+}
+
