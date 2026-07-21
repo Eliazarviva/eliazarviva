@@ -1,0 +1,21 @@
+import java.util.Scanner;
+
+/**
+*
+* @author Eddie Eliazar Ganchozo Vargas
+*/
+public class Ejerc7ArreglosMatriz {
+
+public static void main(String[] args) { Scanner teclado = new Scanner(System.in); int filas = 4;
+int columnas = 4;
+int[][] matriz = new int[filas][columnas]; int suma = 0;
+for (int i = 0; i < filas; i++) {
+for (int j = 0; j < columnas; j++) {
+System.out.print("Ingrese el valor para la fila " + i + ", columna " + j + ": "); matriz[i][j] = Integer.parseInt(teclado.nextLine());
+suma += matriz[i][j];
+}
+}
+
+System.out.println("\nSuma total de todos los elementos: " + suma);
+}
+}
