@@ -1,0 +1,20 @@
+import java.util.Scanner;
+
+/**
+*
+* @author Eddie Eliazar Ganchozo Vargas 
+*/
+public class Ejer5ArreglosMatriz {
+
+public static void main(String[] args) { Scanner teclado = new Scanner(System.in); int[] numeros = new int[12];
+
+for (int i = 0; i < numeros.length; i++) {
+System.out.print("Ingrese un numero positivo para la posicion " + i + ": "); int entrada = Integer.parseInt(teclado.nextLine());
+numeros[i] = entrada + i;
+}
+
+System.out.println("\n--- Arreglo resultante ---"); for (int i = 0; i < numeros.length; i++) {
+System.out.println("Posicion " + i + ": " + numeros[i]);
+}
+}
+}
