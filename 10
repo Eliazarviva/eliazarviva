@@ -1,0 +1,31 @@
+import java.util.Scanner;
+
+/**
+*
+* @author Eddie Eliazar Ganchozo Vargas
+*/
+public class Ejer10ArreglosMatriz {
+
+public static void main(String[] args) { Scanner teclado = new Scanner(System.in); int filas = 3;
+int columnas = 5;
+int[][] matriz = new int[filas][columnas];
+
+for (int i = 0; i < filas; i++) {
+for (int j = 0; j < columnas; j++) { int indiceFila = i + 1;
+int indiceColumna = j + 1;
+
+System.out.print("Ingrese el valor para la fila " + indiceFila + ", columna " + indiceColumna + ": ");
+int entrada = Integer.parseInt(teclado.nextLine());
+
+matriz[i][j] = entrada + (indiceFila * indiceColumna);
+}
+}
+
+System.out.println("\n--- Matriz resultante ---"); for (int i = 0; i < filas; i++) {
+for (int j = 0; j < columnas; j++) { System.out.print(matriz[i][j] + " ");
+}
+System.out.println();
+}
+}
+}
+
